@@ -1,6 +1,6 @@
 import profilepic from '../../public/profile-pic-india.png';
 import dontThink from '../../public/dont-think.jpg';
-import burningManuscript from '../../public/burning-ancient-manuscript-stockcake.jpg';
+//import burningManuscript from '../../public/burning-ancient-manuscript-stockcake.jpg';
 import burningPapersDangers from '../../public/burning-papers-dangers.jpg';
 
 const About = () => {

@@ -1,7 +1,7 @@
 export default function PrivacyPolicy({
   effectiveDate = "9/12/2025",
   contactEmail = "johndifelice@gmail.com",
-  siteOrAuthor = "John DiFelice",
+  //siteOrAuthor = "John DiFelice",
   termsHref = "/terms",
 }: {
   effectiveDate?: string;
@@ -9,7 +9,7 @@ export default function PrivacyPolicy({
   siteOrAuthor?: string;
   termsHref?: string;
 }) {
-  const year = new Date().getFullYear();
+  //const year = new Date().getFullYear();
   return (
     <div className="min-h-screen bg-[radial-gradient(1200px_800px_at_10%_-10%,#1f2937_0,transparent_60%),radial-gradient(1000px_700px_at_110%_10%,#1e293b_0,transparent_60%),#0f172a] text-gray-200">
       <div className="max-w-4xl mx-auto p-6 md:p-8">

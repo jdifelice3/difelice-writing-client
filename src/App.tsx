@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import { ErrorBoundary } from "react-error-boundary";
 import Terms from './components/Terms';
-import Privacy from './components/PrivacyPolicy';
+//import Privacy from './components/PrivacyPolicy';
 import logo from '../public/white-home-icon-vector-7151383.png';
 import PrivacyPolicy from "./components/PrivacyPolicy";
 
