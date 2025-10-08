@@ -6,10 +6,15 @@ import { Form } from '../types';
 import { fetchWorksByForm } from '../services/worksService';
 import PdfViewer from './PdfViewer';
 import { useToggleVisibility } from "../hooks/useToggleVisibility";
+import { getEndpoints } from '../config/EndPoint';
 
 const WorkComponent = () => {
     const [works, setWorks] = useState<Work[]>([]);
     const [error, setError] = useState<string | null>(null);
+    const [url, setUrl] = useState<string>('');
+
+    const envs = getEndpoints(import.meta.env.MODE);
+    setUrl(envs.VITE_API_BASE_URL);
 
     const { handleToggle } = useToggleVisibility(setWorks);
 
@@ -59,7 +64,7 @@ const WorkComponent = () => {
                 }
                 {work.manuscriptIsVisible && (
                     <div id={'pdf' + index} style={{ marginTop: 12 }}>
-                        <PdfViewer fileUrl={`http://localhost:3000/api/pdf/${encodeURIComponent(work.fileName)}`} zoom='page-fit' />
+                        <PdfViewer fileUrl={`${url}/api/pdf/${encodeURIComponent(work.fileName)}`} zoom='page-fit' />
                         <div>&nbsp;</div>
                     </div>
                 )}
