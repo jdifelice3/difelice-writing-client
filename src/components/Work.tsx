@@ -11,7 +11,8 @@ import { getEndpoints } from '../config/EndPoint';
 const WorkComponent = () => {
     const [works, setWorks] = useState<Work[]>([]);
     const [error, setError] = useState<string | null>(null);
-    const [url, setUrl] = useState<string>('');
+
+    const envs = getEndpoints(import.meta.env.MODE);
 
     const { handleToggle } = useToggleVisibility(setWorks);
 
@@ -22,8 +23,6 @@ const WorkComponent = () => {
     useEffect(() => {
         (async () => {
         try {
-            const envs = getEndpoints(import.meta.env.MODE);
-            setUrl(envs.VITE_API_BASE_URL);
             Form.parse(writingForm);
             if (!writingForm){
                 const errorMessage = "A form of writing must be provided";
@@ -63,7 +62,7 @@ const WorkComponent = () => {
                 }
                 {work.manuscriptIsVisible && (
                     <div id={'pdf' + index} style={{ marginTop: 12 }}>
-                        <PdfViewer fileUrl={`${url}/api/pdf/${encodeURIComponent(work.fileName)}`} zoom='page-fit' />
+                        <PdfViewer fileUrl={`${envs.VITE_API_BASE_URL}/api/pdf/${encodeURIComponent(work.fileName)}`} zoom='page-fit' />
                         <div>&nbsp;</div>
                     </div>
                 )}
