@@ -13,9 +13,6 @@ const WorkComponent = () => {
     const [error, setError] = useState<string | null>(null);
     const [url, setUrl] = useState<string>('');
 
-    const envs = getEndpoints(import.meta.env.MODE);
-    setUrl(envs.VITE_API_BASE_URL);
-
     const { handleToggle } = useToggleVisibility(setWorks);
 
     // Hooks at top level
@@ -25,6 +22,8 @@ const WorkComponent = () => {
     useEffect(() => {
         (async () => {
         try {
+            const envs = getEndpoints(import.meta.env.MODE);
+            setUrl(envs.VITE_API_BASE_URL);
             Form.parse(writingForm);
             if (!writingForm){
                 const errorMessage = "A form of writing must be provided";
