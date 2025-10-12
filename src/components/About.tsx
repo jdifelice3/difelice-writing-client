@@ -17,8 +17,8 @@ const About = () => {
         </p>
         <h3>Beginnings</h3>
         <p>
-        I started writing fiction when I was 17. I still have the first short story I wrote. How do I describe it? "Bad" comes to mind,
-        which is understandable given my life experiences at that age. Coming home from high school and watching <i>Heathcliff</i> and 
+        I started writing fiction when I was 17. I still have the first short story I wrote. It was terrible,
+        but understandable given my life experiences at that age. Coming home from high school and watching <i>Heathcliff</i> and 
         <i>Thunder Cats</i> cartoons is not fertile ground for storytelling.  
         </p>
         <p className='p-center'>
@@ -29,7 +29,7 @@ const About = () => {
         Grand Canyon. Told in the first-person perspective, they meet strange characters, places, and situations along the way that 
         beat the reader black and blue with the message that the main character has serious issues and hates his life. Upon reaching their destination, 
         the reader learns that the entire journey was in the main character's head. The main character lay dying on the grounds of his
-        elementary school--the last place he was happy--from a self-inflicted gunshot wound. That's right, I was a victim of watching
+        elementary school&mdash;the last place he was happy&mdash;from a self-inflicted gunshot wound. That's right, I was a victim of watching
         <i>The Usual Suspects</i> too many times.
         </p>
         <p>
@@ -51,8 +51,8 @@ const About = () => {
         </p>
         <h3>Fiction, Revisted</h3>
         <p>
-        Taking what I learned from playwrighting--the economy of words, creating tension, keeping exposition to a minimum, and making 
-        every character matter--I returned to short story and novel writing. I self-published my first novel, <i>American Zeroes</i>, in 2016.
+        Taking what I learned from playwrighting&mdash;the economy of words, creating tension, keeping exposition to a minimum, and making 
+        every character matter&mdash;I returned to short story and novel writing. I self-published my first novel, <i>American Zeroes</i>, in 2016.
         I will never self-publish again. I am working to complete my second novel, <i>Traffic Girl Wars</i>, and if it's never published,
         I'm ok with that.
         </p>
