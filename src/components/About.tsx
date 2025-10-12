@@ -19,7 +19,7 @@ const About = () => {
         <p>
         I started writing fiction when I was 17. I still have the first short story I wrote. It was terrible,
         but understandable given my life experiences at that age. Coming home from high school and watching <i>Heathcliff</i> and 
-        <i>Thunder Cats</i> cartoons is not fertile ground for storytelling..  
+        <i>Thunder Cats</i> cartoons is not fertile ground for storytelling.
         </p>
         <p className='p-center'>
           <img src={dontThink} style={{width: 'auto', height: '200px'}}/>
