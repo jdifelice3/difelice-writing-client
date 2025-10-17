@@ -44,7 +44,7 @@ const About = () => {
         At the age of 30, a barista in the building where I worked asked my girlfriend on a date. He didn't know we were together because
         we were co-workers and were keeping it on the DL. He asked her to join him at a theater
         for a 24-hour theater experience called <i>Fly By Night</i>. She begged me to go with her, which he was not happy about, but it 
-        became my first acting experience. I did not feel comfortable acting, and instead became involved in the theater as a writer.
+        became my first acting experience. I did not feel comfortable acting, and instead became involved with the theater as a writer.
         I had never written for the stage, but within three years, and due largely to the encouragement and constructive feedback from other writer's at the theater,
         I had two full-length plays produced in Philadelphia: <i>Half the Rent</i>, which I'm proud of, and <i>The Department</i>, which
         I wish I had never written. <i>The Department</i> had a much longer run because life is, as you know, cruel.
